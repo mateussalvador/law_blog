@@ -19,6 +19,7 @@
   list-style: none;
   font-family: "Roboto";
   box-sizing: border-box;
+  color: var(--preto);
 }
 
 body {
@@ -47,6 +48,7 @@ header {
   font-size: 50px;
   font-family: "PT Sans";
   text-transform: uppercase;
+  color: var(--branco);
 }
 
 .menu {
@@ -96,8 +98,7 @@ header p {
   flex-direction: column;
   gap: 20px;
   max-width: 600px;
-  height: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 p {
   font-size: 1.2rem;
@@ -105,6 +106,7 @@ p {
 h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: var(--verde-escuro);
 }
 
 .section-title-text-intro {
@@ -114,17 +116,15 @@ h1 {
 }
 
 h2 {
-  color: var(--preto);
+  color: var(--verde-escuro);
   font-size: 1.5rem;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .author-info {
   display: flex;
   align-items: center;
-  padding: 20px;
-  justify-content: space-between;
+  gap: 15px;
 }
 
 .author-name {
@@ -144,30 +144,34 @@ h2 {
   border-radius: 50%;
 }
 
-.last-posts {
-  display: flex;
-  max-width: 100%;
-  gap: 20px;
-}
-
-.last-post-1,
-.last-post-2 {
-  border: 2px solid var(--verde-escuro);
+.last-post {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid var(--verde-escuro);
+  padding: 20px;
+  gap: 15px;
+}
+
+.last-post p {
+  max-height: 280px;
+  overflow: hidden;
+  font-size: 1.15rem;
+  margin-top: 5px;
 }
 
 h3 {
   font-size: 1.25rem;
   color: var(--verde-escuro);
-  margin-bottom: 5px;
-  margin-top: 10px;
-  text-align: center;
 }
 
 .thumb {
   display: block;
   width: 100%;
+}
+
+.text-post {
+  border: 1px solid var(--cinza);
+  border-radius: px;
 }
