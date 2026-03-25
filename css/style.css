@@ -27,6 +27,7 @@ body {
 
 header {
   background-color: var(--roxo);
+  width: 100%;
 }
 
 .logo {
@@ -225,10 +226,11 @@ main {
 
 .author-and-date .author-img {
   width: 50px;
-  border-radius: 50%;
+  height: 50px;
+  border-radius: 25px;
   object-fit: cover;
-  object-position: top center;
-  padding-right: 10px;
+  object-position: center center;
+  margin-right: 10px;
 }
 
 .author-and-date * {
