@@ -248,6 +248,7 @@ main {
 footer {
   background-color: var(--azul-1);
   padding: 50px;
+  width: 100%;
 }
 .footer a {
   color: var(--branco);
@@ -258,4 +259,37 @@ footer {
 }
 .footer a:hover {
   color: var(--azul-5);
+}
+
+.publish {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+  height: 100%;
+}
+
+.publish * {
+  grid-column: 1/2;
+  text-align: left;
+}
+
+.publish h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: var(--azul-2);
+  line-height: 1.4;
+}
+.publish p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.publish h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--azul-2);
+  margin-top: 30px;
+  margin-bottom: 7px;
+}
+.publish a {
+  color: var(--azul-3);
 }
