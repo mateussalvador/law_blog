@@ -1,10 +1,10 @@
 :root {
   --preto: #000000;
-  --roxo-escuro: #202e59;
-  --lilas: #c3a3d9;
-  --roxo: #a60a6f;
-  --amarelo: #f2cd5e;
-  --laranja: #f2b035;
+  --azul-1: #011c40;
+  --azul-2: #033e8c;
+  --azul-3: #0455bf;
+  --azul-4: #0477bf;
+  --azul-5: #9ab5d9;
   --branco: #ffffff;
   --cinza: #666666;
 }
@@ -26,12 +26,12 @@ body {
 }
 
 header {
-  background-color: var(--roxo);
+  background-color: var(--azul-1);
   width: 100%;
 }
 
 .logo {
-  color: var(--laranja);
+  color: var(--branco);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2rem;
@@ -64,7 +64,7 @@ header {
 }
 
 .menu a:hover {
-  color: var(--laranja);
+  color: var(--azul-5);
 }
 
 .menu img {
@@ -72,10 +72,14 @@ header {
 }
 
 a.login-button {
-  color: var(--laranja);
-  border: 2px solid var(--laranja);
+  color: var(--branco);
+  border: 2px solid var(--branco);
   padding: 7px 14px;
   transition: 0.5;
+}
+
+a.login-button:hover {
+  border-color: var(--azul-5);
 }
 
 .blog-title-section.externo {
@@ -90,9 +94,8 @@ a.login-button {
 .blog-title-section.interno {
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
 }
 
 .blog-title-section-text {
@@ -111,17 +114,18 @@ h1 span {
 }
 
 .blog-title-section h2 {
-  font-family: "Bruno Ace SC", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   margin-top: 10px;
 }
 
-h1 span {
+h1 {
   text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
-h1 {
-  padding-bottom: 15px;
+h1 span {
+  text-transform: lowercase;
 }
 
 .search-section {
@@ -129,7 +133,7 @@ h1 {
 }
 
 .search-section h2 {
-  color: var(--roxo);
+  color: var(--azul-2);
   text-align: left;
   margin-bottom: 10px;
 }
@@ -154,7 +158,7 @@ h1 {
 .num-posts,
 .num-posts span {
   font-size: 1.25rem;
-  color: var(--roxo-escuro);
+  color: var(--azul-2);
 }
 
 .num-posts span {
@@ -212,7 +216,7 @@ main {
 }
 
 .post-title {
-  color: var(--roxo-escuro);
+  color: var(--azul-4);
   font-size: 1.1rem;
 }
 
@@ -238,11 +242,11 @@ main {
   font-size: 1rem;
 }
 .post-category {
-  color: var(--laranja);
+  color: var(--azul-5);
 }
 
 footer {
-  background-color: var(--roxo);
+  background-color: var(--azul-1);
   padding: 50px;
 }
 .footer a {
@@ -251,4 +255,7 @@ footer {
 
 .footer p {
   text-align: center;
+}
+.footer a:hover {
+  color: var(--azul-5);
 }
