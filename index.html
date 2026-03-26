@@ -31,6 +31,9 @@
             </li>
             <li><a class="login-button" href="">Login</a></li>
           </ul>
+          <button class="menu-alternativo">
+            <img src="./media/menu.svg" alt="" />
+          </button>
         </nav>
       </div>
     </header>
@@ -38,7 +41,8 @@
     <section class="blog-title-section externo">
       <div class="blog-title-section interno">
         <div class="blog-title-section-text">
-          <h1>Nexus:<br /><span>Observatório de IA e Direito</span></h1>
+          <h1>Nexus:</h1>
+          <h2>Núcleo de IA e Direito</h2>
         </div>
       </div>
     </section>
@@ -47,24 +51,25 @@
       <div class="interno">
         <h2>Posts</h2>
         <div class="search-filter">
-          <p class="num-posts"><span>20</span> posts</p>
-
           <div class="search-filter-forms">
-            <form method="get" action="">
+            <form class="search-post" method="get" action="">
               <input
                 type="text"
                 placeholder="O que gostaria de aprender hoje?"
               />
             </form>
 
-            <form method="get" action="">
-              <label for="category">Categoria</label>
-              <select name="category" id="category">
-                <option value="">Todas as categorias</option>
-                <option value="Direito">Direito</option>
-                <option value="IA">IA</option>
-              </select>
-            </form>
+            <div class="category-and-num-posts">
+              <p class="num-posts"><span>20</span> posts</p>
+              <form method="get" action="">
+                <label for="category">Categoria</label>
+                <select name="category" id="category">
+                  <option value="">Todas as categorias</option>
+                  <option value="Direito">Direito</option>
+                  <option value="IA">IA</option>
+                </select>
+              </form>
+            </div>
           </div>
         </div>
       </div>
