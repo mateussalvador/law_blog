@@ -40,7 +40,7 @@ header {
 }
 
 .interno {
-  max-width: 90vw;
+  max-width: 80vw;
   margin: auto;
 }
 
@@ -286,37 +286,157 @@ footer {
   text-align: center;
 }
 
-.publish {
+.publish,
+.sobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px 0;
   height: 100%;
 }
 
-.publish * {
+.publish *,
+.sobre * {
   grid-column: 1/2;
   text-align: left;
 }
 
-.publish h1 {
+.publish h1,
+.sobre h1 {
+  font-family: "Bruno Ace SC", Helvetica, Arial, sans-serif;
   margin-top: 20px;
   font-size: 2rem;
   color: var(--azul-2);
   line-height: 1.4;
 }
-.publish p {
-  font-size: 1.25rem;
+.publish p,
+.sobre p {
+  font-size: 1.3rem;
   line-height: 1.4;
 }
-.publish h2 {
+.publish h2,
+.sobre h2 {
   font-size: 1.5rem;
   line-height: 1.4;
   color: var(--azul-2);
   margin-top: 30px;
   margin-bottom: 7px;
 }
-.publish a {
+.publish a,
+.sobre a {
   color: var(--azul-3);
+}
+
+/* Página da Publicação */
+.publicacao h1,
+.publicacao h2 {
+  color: var(--azul-2);
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 2.25rem;
+  text-align: left;
+}
+.publicacao h2 {
+  font-size: 1.75rem;
+  margin-top: 20px;
+}
+.publicacao p,
+.publicacao li,
+.publicacao strong {
+  font-size: 1.3rem;
+}
+
+.publicacao .post-article li {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.post-article li strong {
+  margin-left: 15px;
+}
+
+.post-article strong {
+  color: var(--azul-1);
+}
+
+strong {
+  font-weight: bold;
+}
+
+.publicacao .post-article li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: var(--azul-1);
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  margin-left: 15px;
+}
+
+.publicacao .post-article li::marker {
+  margin: 0;
+}
+
+.publicacao * {
+  line-height: 1.5;
+}
+
+.post-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 0;
+  align-items: center;
+  grid-template-rows: auto;
+}
+
+.post-header h1 {
+  margin-right: 100px;
+}
+
+.thumb {
+  width: 100%;
+}
+.post-thumb {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 12px;
+}
+
+.post-header .author-and-date {
+  margin-top: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-header .author-and-date .author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.author-info-bottom {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.author-info-bottom img.social-icon {
+  width: 22px;
+}
+
+.post-header .author-and-date * {
+  color: var(--preto);
+  font-size: 1.25rem;
+}
+
+.post-header .author-and-date .author-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin-right: 20px;
 }
 
 @media (max-width: 1180px) {
@@ -328,6 +448,29 @@ footer {
 @media (max-width: 1024px) {
   .posts {
     grid-template-columns: 1fr 1fr;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .publish,
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .post-header {
+    grid-template-columns: 1fr;
+  }
+
+  .thumb {
+    margin-top: 30px;
+  }
+  .post-header h1 {
+    margin: 0;
+    text-align: center;
+  }
+  .post-header .author-and-date {
+    justify-content: center;
   }
 }
 
@@ -362,10 +505,25 @@ footer {
     max-width: 100vw;
     padding: 10px;
   }
+  .post-header h1 {
+    font-size: 2rem;
+  }
+  .publicacao h2 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+  }
+  .publicacao p,
+  .publicacao li,
+  .publicacao strong {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 402px) {
   .post {
     height: 415px;
+  }
+  .post-header h1 {
+    font-size: 1.9rem;
   }
 }
