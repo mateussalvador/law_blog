@@ -1,65 +1,51 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus | Publique seu artigo</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./media/law-icon.svg" />
-  </head>
-  <body>
-    <section class="login-page">
-      <div class="lateral-login">
-        <img class="thumb-login-page" src="./media/login-page-2.jpg" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus | Publique seu artigo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./media/law-icon.svg" />
+</head>
+
+<body>
+  <section class="login-page">
+    <div class="lateral-login">
+      <img class="thumb-login-page" src="./media/login-page-2.jpg" alt="" />
+    </div>
+    <section class="form-login">
+      <h1 class="logo">Nexus</h1>
+      <h2>Observatório de IA e Direito</h2>
+      <div class="instrucoes">
+        <div class="redirect-register">
+          <p>Já tem cadastro no Nexus?</p>
+          <a href="./login.html">Entrar</a>
+        </div>
       </div>
-      <section class="form-login">
-        <h1 class="logo">Nexus</h1>
-        <h2>Observatório de IA e Direito</h2>
-        <div class="instrucoes">
-          <div class="redirect-register">
-            <p>Já tem cadastro no Nexus?</p>
-            <a href="./cadastrar.html">Entrar</a>
+      <form action="" method="" class="">
+        <div class="">
+          <div class="input-wrapper user">
+            <label for="email">E-mail ou nome de usuário</label>
+            <input type="text" name="user" id="email" placeholder="Digite seu e-mail" required="" />
           </div>
         </div>
-        <form action="" method="" class="">
-          <div class="">
-            <div class="input-wrapper user">
-              <label for="email">E-mail ou nome de usuário</label>
-              <input
-                type="text"
-                name="user"
-                id="email"
-                placeholder="Digite seu e-mail"
-                required=""
-              />
-            </div>
-          </div>
 
-          <div class="input-wrapper password">
-            <label for="password">Senha</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Digite sua senha"
-              required=""
-            />
-            <button
-              type="button"
-              aria-label="Mudar visibilidade da senha"
-              data-tooltip="Exibir senha"
-            ></button>
-          </div>
+        <div class="input-wrapper password">
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha" required="" />
+          <button type="button" aria-label="Mudar visibilidade da senha" data-tooltip="Exibir senha"></button>
+        </div>
 
-          <button class="login-btn">Entrar</button>
-        </form>
-      </section>
+        <button class="login-btn">Entrar</button>
+      </form>
     </section>
-  </body>
+  </section>
+</body>
+
 </html>

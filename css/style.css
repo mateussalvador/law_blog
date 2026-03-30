@@ -46,7 +46,7 @@ h3 {
 header {
   background-color: var(--azul-1);
   width: 100%;
-  border-bottom: 1px solid var(--);
+  border-bottom: 1px solid var(--azul-2);
 }
 
 .logo {
@@ -71,7 +71,7 @@ header {
 .menu {
   display: flex;
   gap: 20px;
-  align-content: center;
+  align-items: center;
 }
 
 .menu a {
@@ -86,6 +86,45 @@ footer a:hover {
   color: var(--azul-5);
 }
 
+.search-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-search-input {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  background-color: var(--azul-1);
+  color: var(--texto);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  height: 34px;
+  outline: none;
+}
+
+.header-search-input.active {
+  width: 240px;
+  padding: 7px 14px;
+  border: 2px solid var(--branco);
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+.search-icon-link {
+  display: flex;
+  align-items: center;
+}
 .menu img {
   height: 30px;
 }
@@ -107,6 +146,8 @@ a.login-button:hover {
   width: 40px;
   background-color: transparent;
   display: none;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .menu-alternativo img {
@@ -219,7 +260,7 @@ main {
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 20px;
   grid-auto-rows: auto;
 }
@@ -572,7 +613,35 @@ strong {
 
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    position: absolute;
+    top: 101px;
+    right: 0;
+    background: var(--azul-1);
+    width: 100%;
+    height: calc(100vh - 101px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 10px;
+    transform: translateX(100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .menu.active {
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    width: 80%;
+    text-align: center;
+  }
+  .menu a {
+    display: block;
+    padding: 15px;
   }
   .menu-alternativo {
     display: block;
@@ -583,12 +652,23 @@ strong {
   .posts {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
+  .header-search-input {
+    padding: 5px 10px;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .header-search-input.active {
+    width: 99%;
+    margin-right: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
   .login-page {
     display: flex;
     flex-direction: column;
   }
   .login-page .lateral-login {
-    height: 200px;
+    height: 300px;
   }
   .lateral-login .thumb-login-page {
     height: 100%;
@@ -603,6 +683,10 @@ strong {
     justify-content: flex-start;
     padding: 50px;
     height: 100%;
+  }
+
+  .publicacao.interno {
+    max-width: 90vw;
   }
 }
 
