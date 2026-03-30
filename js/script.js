@@ -33,4 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Bloqueia scroll horizontal no mobile ---
+    document.addEventListener('touchmove', (e) => {
+        if (e.touches[0].clientX > window.innerWidth) {
+            e.preventDefault();
+        }
+    }, { passive: false });
 });
