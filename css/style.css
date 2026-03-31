@@ -10,6 +10,7 @@
   --branco: #ffffff;
   --fundo: #111;
   --cinza: #666666;
+  --cinza-claro: #999999;
   --texto: #eeeeee;
 }
 
@@ -489,6 +490,70 @@ strong {
   text-indent: 50px;
 }
 
+.post-author-area {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.post-author-area::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 120px;
+  background-image: linear-gradient(
+    to right,
+    var(--azul-2) 30%,
+    var(--azul-4) 60%
+  );
+  margin-bottom: 40px;
+}
+
+.post-author-img {
+  object-fit: cover;
+  object-position: center center;
+  width: 152px;
+  height: 152px;
+  border-radius: 76px;
+  margin-bottom: 40px;
+}
+
+.post-author-area * {
+  color: var(--texto);
+}
+
+.post-author-area span {
+  margin-bottom: 20px;
+  color: var(--cinza-claro);
+}
+
+p.post-author-presentation {
+  text-indent: 0;
+  max-width: 50vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-author-social span {
+  font-size: 1.6rem;
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.post-author-redes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.post-author-redes img {
+  width: 36px;
+  height: 36px;
+}
+
 /* Início da Página de Login */
 
 .login-page {
@@ -625,9 +690,16 @@ strong {
   a {
     font-size: 1.8rem;
   }
+
+  .lateral-login .thumb-login-page {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 768px) {
+  .post-author-area p {
+    max-width: 80vw;
+  }
   .menu {
     position: absolute;
     top: 101px;
@@ -684,7 +756,7 @@ strong {
     flex-direction: column;
   }
   .login-page .lateral-login {
-    height: 300px;
+    height: 200px;
   }
   .lateral-login .thumb-login-page {
     height: 100%;
@@ -696,7 +768,7 @@ strong {
   .form-login {
     display: flex;
     justify-content: flex-start;
-    padding: 50px;
+    padding: 30px;
     height: 100%;
   }
 
@@ -721,9 +793,11 @@ strong {
   .post-title {
     font-size: 1.75rem;
   }
-  .login-page .lateral-login {
-    height: 100px;
+
+  .login-btn {
+    margin-top: 30px !important;
   }
+
   .redirect-register {
     flex-direction: column;
     gap: 5px;
