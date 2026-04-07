@@ -27,7 +27,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: hidden;
 }
 
 * {
@@ -59,7 +58,6 @@ h3 {
 header {
   background-color: var(--azul-1);
   width: 100%;
-  border-bottom: 1px solid var(--azul-2);
   overflow: hidden;
 }
 
@@ -80,6 +78,10 @@ header {
   justify-content: space-between;
   padding: 30px 0;
   align-items: center;
+}
+
+nav {
+  position: relative;
 }
 
 .menu {
@@ -144,14 +146,15 @@ footer a:hover {
 
 a.login-button {
   color: var(--branco);
-  border: 2px solid var(--branco);
-  padding: 7px 14px;
-  border-radius: 4px;
   transition: all 300ms ease-in-out;
 }
 
 a.login-button:hover {
   border-color: var(--azul-5);
+}
+
+i {
+  font-size: 2.2rem;
 }
 
 .menu-alternativo {
@@ -167,38 +170,66 @@ a.login-button:hover {
 }
 
 .blog-title-section.externo {
-  height: 300px;
   background-color: var(--azul-1);
+  background-image: linear-gradient(to bottom, var(--azul-1), var(--fundo));
   background-repeat: no-repeat;
-  background-position: bottom right;
   background-size: cover;
+  background-position: 100% 70%;
+  margin-bottom: 10px;
+}
+
+.last-posts {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .blog-title-section.interno {
-  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .blog-title-section-text {
-  max-width: 50%;
-  margin-bottom: 40px;
-  text-align: center;
+  max-width: 800px;
+  grid-column: 2/3;
+  padding: 50px 0;
+  justify-self: start;
 }
 
 .blog-title-section h1,
-h2,
+.blog-title-section h2,
 h1 span {
   color: var(--branco);
   text-align: center;
   line-height: 1.4;
   font-family: "Bruno Ace SC", Helvetica, Arial, sans-serif;
   max-width: 100%;
+  position: relative;
+  z-index: 1001;
+}
+
+.blog-title-section-text * {
+  color: var(--texto);
+  text-align: center;
+}
+
+.blog-title-section h1 {
+  padding-bottom: 0;
 }
 
 .blog-title-section h2 {
-  margin-top: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.blog-title-section p {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  line-height: 1.4;
+  word-spacing: 0;
+  letter-spacing: 0;
 }
 
 h1 {
@@ -226,6 +257,12 @@ h1 span {
   width: 100%;
   outline: none;
   transition: all 300ms ease-in-out;
+  height: 50px;
+}
+
+.search-section select,
+.search-post [placeholder] {
+  font-size: 1.75rem;
 }
 
 [for="category"] {
@@ -277,7 +314,7 @@ main {
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 20px;
   grid-auto-rows: auto;
 }
@@ -288,7 +325,7 @@ main {
 .post {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--azul-5);
+  border: 1px solid var(--cinza);
   border-radius: 4px;
   background-color: var(--fundo);
   height: 100%;
@@ -682,13 +719,14 @@ p.post-author-presentation {
     grid-template-columns: 1fr 2fr;
   }
   p,
+  .blog-title-section-text p,
   li,
   strong,
   span,
   input,
   input[placeholder],
   a {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .lateral-login .thumb-login-page {
@@ -697,6 +735,10 @@ p.post-author-presentation {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .post-author-area p {
     max-width: 80vw;
   }
@@ -705,7 +747,7 @@ p.post-author-presentation {
     top: 101px;
     right: 0;
     background: var(--azul-1);
-    width: 100%;
+    width: 50vw;
     height: calc(100vh - 101px);
     flex-direction: column;
     align-items: center;
@@ -713,10 +755,9 @@ p.post-author-presentation {
     padding-top: 40px;
     gap: 10px;
     transform: translateX(100%);
-    transition: transform 300ms ease-in-out;
-    z-index: 1000;
-    overflow-y: auto;
+    transition: all 300ms ease-in-out;
   }
+
   .menu.active {
     transform: translateX(0);
     display: flex;
@@ -724,8 +765,8 @@ p.post-author-presentation {
     align-items: center;
   }
   .menu li {
-    width: 80%;
-    text-align: center;
+    margin-left: 0;
+    opacity: 0;
   }
   .menu a {
     display: block;
@@ -803,12 +844,13 @@ p.post-author-presentation {
     gap: 5px;
   }
   p,
+  .blog-title-section-text p,
   li,
   strong,
   span,
   input,
   input[placeholder],
   a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }

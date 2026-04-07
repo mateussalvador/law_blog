@@ -1,327 +1,351 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus | Observatório de IA e Direito</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./media/law-icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+      integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexus | Observatório de IA e Direito</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="./media/law-icon.svg" />
-</head>
-
-<body>
-  <header>
-    <div class="header interno">
-      <a href="./" class="logo">Nexus</a>
-      <nav>
-        <ul class="menu">
-          <li><a href="./">Início</a></li>
-          <li><a href="./publicar.html">Publicar</a></li>
-          <li><a href="./sobre.html">Sobre</a></li>
-          <li class="search-item">
-            <a href="#" class="search-icon-link"><img class="img-search-header" src="./media/search-white.svg"
-                alt="Abrir barra de pesquisa" /></a>
-            <input type="search" class="header-search-input" placeholder="Pesquisar...">
-          </li>
-          <li><a class="login-button" href="./login.html">Login</a></li>
-        </ul>
-        <button class="menu-alternativo">
-          <img src="./media/menu.svg" alt="Abrir menu" />
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <section class="blog-title-section externo">
-    <div class="blog-title-section interno">
-      <div class="blog-title-section-text">
-        <h1>Nexus:</h1>
-        <h2>Observatório de IA e Direito</h2>
+  <body>
+    <header>
+      <div class="header interno">
+        <a href="./" class="logo">Nexus</a>
+        <nav>
+          <ul class="menu">
+            <li><a href="./">Início</a></li>
+            <li><a href="./publicar.html">Publicar</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li class="search-item">
+              <a href="#" class="search-icon-link"
+                ><i class="fa-brands fa-sistrix"></i
+              ></a>
+              <input
+                type="search"
+                class="header-search-input"
+                placeholder="Pesquisar..."
+              />
+            </li>
+            <li>
+              <a class="login-button" href="./login.html"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+          </ul>
+          <button class="menu-alternativo">
+            <img src="./media/menu.svg" alt="Abrir menu" />
+          </button>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="search-section">
-    <div class="interno">
-      <h2>Posts</h2>
-      <div class="search-filter">
-        <div class="search-filter-forms">
-          <form class="search-post" method="get" action="">
-            <input type="search" placeholder="O que gostaria de aprender hoje?" />
-          </form>
+    <section class="blog-title-section externo">
+      <div class="blog-title-section interno">
+        <div class="blog-title-section-text">
+          <h1>Nexus:</h1>
+          <h2>Observatório de IA e Direito</h2>
+          <p>
+            Bem-vindo ao Nexus, um espaço acadêmico e dedicado ao Direito e à
+            Inteligência Artificial, com o objetivo de oferecer análises e
+            reflexões que transitam entre o universo jurídico e o tecnológico,
+            seja em conjunto ou de forma independente.
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <div class="category-and-num-posts">
-            <p class="num-posts"><span>20</span> posts</p>
-            <form method="get" action="">
-              <label for="category">Categoria</label>
-              <select name="category" id="category">
-                <option value="">Todas as categorias</option>
-                <option value="Direito">Direito</option>
-                <option value="IA">IA</option>
-              </select>
+    <section class="search-section">
+      <div class="interno">
+        <h2>Posts</h2>
+        <div class="search-filter">
+          <div class="search-filter-forms">
+            <form class="search-post" method="get" action="">
+              <input
+                type="search"
+                placeholder="O que gostaria de aprender hoje?"
+              />
             </form>
+
+            <div class="category-and-num-posts">
+              <p class="num-posts"><span>16</span> posts</p>
+              <form method="get" action="">
+                <label for="category">Categoria</label>
+                <select name="category" id="category">
+                  <option value="">Todas as categorias</option>
+                  <option value="Direito">Direito</option>
+                  <option value="IA">IA</option>
+                </select>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <main>
-    <div class="posts interno">
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+    <main>
+      <div class="posts interno">
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-3.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-4.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-2.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/login-page-2.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/login-page-3.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/login-page-4.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/login-page.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/direito.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/1.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/4.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/8.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/9.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/login-page-5.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-3.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-6.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <a href="./post.html">
-        <div class="post">
-          <img src="./media/homepage-3.jpg" alt="" />
-          <div class="post-info">
-            <h3 class="post-title">
-              RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
-              Jurídicos
-            </h3>
-            <div class="author-and-date">
-              <img src="./media/perfil.png" alt="" class="author-img" />
-              <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+        </a>
+        <a href="./post.html">
+          <div class="post">
+            <img src="./media/homepage-1.jpg" alt="" />
+            <div class="post-info">
+              <h3 class="post-title">
+                RECONHECIMENTO FACIAL NA AMÉRICA LATINA: Desafios Éticos e
+                Jurídicos
+              </h3>
+              <div class="author-and-date">
+                <img src="./media/perfil.png" alt="" class="author-img" />
+                <span class="author-name">Mateus Salvador • 7 dias atrás</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-    </div>
-  </main>
+        </a>
+      </div>
+    </main>
 
-  <footer>
-    <div class="footer interno">
-      <p><a href="">&copy; Todos os Direitos Reservados</a></p>
-    </div>
-  </footer>
-  <script src="./js/script.js" defer></script>
-</body>
-
+    <footer>
+      <div class="footer interno">
+        <p><a href="">&copy; Todos os Direitos Reservados</a></p>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
+  </body>
 </html>
